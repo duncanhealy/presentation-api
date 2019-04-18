@@ -2,31 +2,27 @@
 
 - What
 
-```txt
 Application Programming Interface (API) In basic terms, APIs just allow applications to communicate with one another. ... An API is not a database. It is an access point to an app that can access a database.
-```
 
 
 - How 
 
-```txt
 An API is a software intermediary that allows two applications to talk to each other. In other words, an API is the messenger that delivers your request to the provider that you're requesting it from and then delivers the response back to you.
-```
 
 
 - Why do we use APIS
 
-```txt
-The development of apps for mobile devices meant that organisations needed to allow users to access information through apps and not just through the Internet.  APIs are used to allow organisations to easily share information to many different systems.
-```
-
+The development of apps for mobile devices meant that organisations needed to allow users to access information through apps and not just through the Internet. APIs are used to allow organisations to easily share information to many different systems.
 
 
 - Where
 
+10000?0s of APIS published for open consumption. This along with Open Data movements have shifted how we can consume and process data.
 
-- When 
 
+- When
+
+APIs allow the movement of data in a structured manner from server to client and vice-versa
 
 
 
@@ -43,12 +39,113 @@ The development of apps for mobile devices meant that organisations needed to al
 
 - How many were you using without realising
 
-- Documentation in the old days meant 
+
+## Documentation
+
   + Reading 
   + Experimenting to find out what they had not documented
   + Testing continuously for regressions
+  + How can we make this a better experiece
 
-- Now we can automate
+
+
+## Protocols
+
+- Text
+
+- Custom formats
+
+- Binary
+
+- XML
+
+- SOAP
+
+- RPC
+
+- JSON
+
+
+- XML-RPC
+
+- JSON-RPC
+
+- GRPC
+
+- socket 
+
+- GraphQL
+
+- DB
+
+
+
+## API Types
+
+- REST
+- REACTIVE
+- PUSH
+- PULL
+- CRUD
+- Framework
+
+
+## Protection + Security
+
+- Authentication
+- Oauth
+- SAML
+- JWT
+- !COOKIES
+- !Session
+- Monitoring
+- Realtime alerts
+- Analysis
+
+
+## Build in
+
+- Rate limits
+- Error handling
+- http retry
+- traffic shifting
+- canary a/b
+
+
+
+## Paradigms
+
+- Frontend
+
+- Middleware
+
+- Backend
+
+- SPA
+
+- Serverless
+
+
+
+## Microservices
+
+- Monolith
+
+- Microlith
+
+- Microservices
+
+- Nanoservices FAAS
+
+
+
+# Deployment Targets
+
+- Container
+
+- Groups of Containers
+
+- Groups of Groups
 
 
 
@@ -59,7 +156,10 @@ The development of apps for mobile devices meant that organisations needed to al
 - Pass objects around 
 - Documentation
   + https://github.com/unicodeveloper/awesome-documentation-tools
-- Test Requests
+
+
+## Test Requests
+
   + https://httpbin.org
 
 
@@ -75,6 +175,12 @@ The development of apps for mobile devices meant that organisations needed to al
 
   + https://wiremock.org/
 
+  + [json-server](https://github.com/typicode/json-server)
+
+  + https://github.com/Marak/faker.js
+
+  + https://github.com/json-schema-faker/json-schema-faker
+  + https://rawgit.com/Marak/faker.js/master/examples/browser/index.html
 
 
 ## Testing
@@ -84,7 +190,24 @@ The development of apps for mobile devices meant that organisations needed to al
   + load testing
 
 
+
+## Tools
+
+
+
+## Apigeneration
+
+[Swagger UI](https://swagger.io/tools/swagger-ui/)
+
+[Postman](https://www.getpostman.com/)
+
+[openapi.tools](https://openapi.tools/)
+
+
 ## Postman
+
+- Tests can be built in
+- Documentation built in
 
 ```js
 var jsonData = JSON.parse(responseBody);
@@ -96,13 +219,75 @@ pm.test('all ', () => {
 })
 ```
 
-## Tools
 
-- Code analyis
+## Containers
 
-- Pipelines
+- Docker - https://www.docker.com/
 
-- CICD
+- Kubernetes - https://kubernetes.io/
+
+- Netlify - https://www.netlify.com/
+
+
+## Lint
+
+Eslint - https://eslint.org/
+
+JSHint - https://jshint.com/
+
+JSLint - https://www.jslint.com/
+
+
+## Code Testing Frameworks 
+
+- Jest - https://jestjs.io/
+
+- Jasmine - https://jasmine.github.io/
+
+- Mocha - https://mochajs.org/
+
+- Karma - https://karma-runner.github.io
+
+
+## Code analyis
+
+- https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
+- https://www.owasp.org/index.php/Source_Code_Analysis_Tools
+
+
+## Pipelines
+
+- gitops flow 
+- flux
+- jenkins-x
+- devops
+
+
+## E2E
+
+- Protractor - https://www.protractortest.org/
+
+- Selenium - https://www.seleniumhq.org
+
+- Cypress - https://www.cypress.io/
+
+- TestCafe - https://devexpress.github.io/testcafe/
+
+
+## CICD
+
+- Jenkins - https://jenkins.io/
+
+- Travis CI - https://travis-ci.org/
+
+- CircleCI - https://circleci.com/
+
+
+## Diagnostics 
+
+- custom vs framework
+- https://heptio.github.io/sonobuoy/latest/
+
 
 
 ## Standard Response 
@@ -216,115 +401,6 @@ pm.test('all ', () => {
 
 
 
-## Protocols
-
-- Text
-
-- Custom formats
-
-- Binary
-
-- XML
-
-- SOAP
-
-- RPC
-
-- JSON
-
-
-- XML-RPC
-
-- JSON-RPC
-
-- GRPC
-
-- socket 
-
-- GraphQL
-
-- DB
-
-
-## Tools
-
-[Swagger UI](https://swagger.io/tools/swagger-ui/)
-
-[Postman](https://www.getpostman.com/)
-
-[openapi.tools](https://openapi.tools/)
-
-
-Jenkins - https://jenkins.io/
-
-Travis CI - https://travis-ci.org/
-
-CircleCI - https://circleci.com/
-
-Eslint - https://eslint.org/
-
-JSHint - https://jshint.com/
-
-JSLint - https://www.jslint.com/
-
-Jest - https://jestjs.io/
-
-Jasmine - https://jasmine.github.io/
-
-
-Mocha - https://mochajs.org/
-
-Karma - https://karma-runner.github.io
-
-SonarQube - https://www.sonarqube.org/
-
-CodeClimate - https://codeclimate.com/
-
-Docker - https://www.docker.com/
-
-Kubernetes - https://kubernetes.io/
-
-Netlify - https://www.netlify.com/
-
-
-Protractor - https://www.protractortest.org/
-
-Selenium - https://www.seleniumhq.org
-
-Cypress - https://www.cypress.io/
-
-TestCafe - https://devexpress.github.io/testcafe/
-
-
-## API Types
-
-- REST
-- REACTICE
-- PUSH
-- PULL
-- CRUD
-- Framework
-
-
-## Protection
-
-- JWT
-- !COOKIES
-- !Session
-- Monitoring
-- Realtime alerts
-- Analysis
-
-
-## Build in
-
-- Rate limits
-- Error handling
-- http retry
-- traffic shifting
-- canary a/b
-
-
 ## Ready to Build
 
 - Favourite Toolsets
@@ -333,63 +409,7 @@ TestCafe - https://devexpress.github.io/testcafe/
 
 
 
-## Paradigms
-
-- Frontend
-
-- Middleware
-
-- Backend
-
-- SPA
-
-- Serverless
-
-
-## Microservices
-
-- Monolith
-
-- Microlith
-
-- Microservices
-
-- Nanoservices FAAS
-
-- Serverless
-
-
-# Deployment Targets
-
-- Container
-
-- Groups of Containers
-
-- Groups of Groups
-
-
-
-
-
-
-## Questions
-
-- High level API design - how do we create collections, how do we
-break it all down
-
-- Use of functions, does the code tied to the route just do some
-simple parsing and then call a function in terms of implementation, or
-do you put as much logic as possible in the actual code?
-
-- Pros and Cons of handling backend state vs passing it around as a parameter
-
-- Testing suites for Postman for example - things to look for
-
-
-
-
-- How to get started - what do I try to do at the very beginning
-
+# Starting points
 
 - https://katacoda.com/
 
@@ -404,21 +424,42 @@ do you put as much logic as possible in the actual code?
 
 - https://learning.getpostman.com/docs/postman/scripts/test_examples/
 
+
 - http://jasonwatmore.com/post/2018/08/06/nodejs-jwt-authentication-tutorial-with-example-api
 
 - https://k3s.io
+
+- https://microk8s.io/
 
 - https://cd.foundation/projects/
 
 - https://docs.cert-manager.io/
 
 
-## Testing
 
-- https://heptio.github.io/sonobuoy/latest/
+## Security
 
-
-## DB - Security
-
+- HSTS
+- CORS
+- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/REST_Security_Cheat_Sheet.md
 - https://docs.mongodb.com/manual/administration/security-checklist/
 - https://www.mongodb.com/blog/post/how-to-avoid-a-malicious-attack-that-ransoms-your-data#suggested-steps
+
+
+
+## Questions
+
+
+- High level API design - how do we create collections, how do we
+break it all down
+
+
+- Use of functions, does the code tied to the route just do some
+simple parsing and then call a function in terms of implementation, or
+do you put as much logic as possible in the actual code?
+
+
+- Pros and Cons of handling backend state vs passing it around as a parameter
+
+
+- Testing suites for Postman for example - things to look for
