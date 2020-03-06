@@ -1,26 +1,26 @@
 # Api  
 
-- What
+## What
 
 Application Programming Interface (API) In basic terms, APIs just allow applications to communicate with one another. ... An API is not a database. It is an access point to an app that can access a database.
 
 
-- How 
+## How 
 
 An API is a software intermediary that allows two applications to talk to each other. In other words, an API is the messenger that delivers your request to the provider that you're requesting it from and then delivers the response back to you.
 
 
-- Why do we use APIS
+## Why do we use APIS
 
 The development of apps for mobile devices meant that organisations needed to allow users to access information through apps and not just through the Internet. APIs are used to allow organisations to easily share information to many different systems.
 
 
-- Where
+## Where
 
 10000?0s of APIS published for open consumption. This along with Open Data movements have shifted how we can consume and process data.
 
 
-- When
+## When
 
 APIs allow the movement of data in a structured manner from server to client and vice-versa
 
@@ -172,6 +172,7 @@ APIs allow the movement of data in a structured manner from server to client and
   + https://www.mocky.io/
 
   + https://learning.getpostman.com/docs/postman/mock_servers/setting_up_mock/
+
 
   + https://wiremock.org/
 
